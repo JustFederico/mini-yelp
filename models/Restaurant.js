@@ -1,11 +1,11 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const restaurantSchema = new mongoose.Schema({
-    name: String,
-    city_id: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'City'
-    }
-})
+  name: String,
+  city_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "City",
+  },
+});
 
-export default mongoose.model('Restaurant', restaurantSchema)
+export default mongoose.model("Restaurant", restaurantSchema);
