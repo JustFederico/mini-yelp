@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+
 
 export default function RestaurantList() {
     const [restaurants, setRestaurants] = useState(null)
@@ -31,7 +33,9 @@ export default function RestaurantList() {
             <h1 className='title'>Restaurants</h1>
             {restaurants.map((restaurant, index) => (
                 <div key={index}>
-                    <p>{restaurant.name}</p>
+                    <Link to={`/restaurant/${restaurant._id}`}>
+                        <p>{restaurant.name}</p>
+                    </Link>
                 </div>
             ))}
         </div>
