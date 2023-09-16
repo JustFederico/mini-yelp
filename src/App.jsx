@@ -1,15 +1,13 @@
 import { useState } from 'react'
-
-
-import './App.css'
+import { LandingPage } from './LandingPage/LandingPage'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
       <div>
-        <p> Mini-Yelp </p>
+        <LandingPage/>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
