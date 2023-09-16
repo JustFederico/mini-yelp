@@ -1,8 +1,11 @@
+import TopNav from '../TopNav/TopNav.jsx'
+import RestaurantList from '../RestaurantList/RestaurantList.jsx'
 
 export default function LandingPage() {
-    // functionality
-    
     return (
-        <div>add your code here</div>   
+        <>
+            <TopNav />
+            <RestaurantList />
+        </>
     )
 }
