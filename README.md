@@ -62,7 +62,7 @@ You can use these endpoints in your code using the fetch API, Axios, or any othe
 
 Here is an example using the fetch API in JavaScript:
 
-`fetch('https://wdpt14-mern-app-server.vercel.app/restaurants/listall')`
+`fetch('https://mini-yelp.onrender.com/restaurants')`
 
 ###### Run Locally
 
