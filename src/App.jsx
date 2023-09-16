@@ -1,20 +1,17 @@
-import { useState } from 'react'
-import { LandingPage } from './LandingPage/LandingPage'
-import LandingPage from './LandingPage/LandingPage'
+import { Routes, Route } from 'react-router-dom'
+import LandingPage from './components/LandingPage/LandingPage'
+import TopNav from './components/TopNav/TopNav'
 
 function App() {
-  
+    return (
+        <>
+            <Routes>
+                <Route path='/' element={<LandingPage />} />
+                <Route path='/' element={<TopNav />} />
 
-  return (
-    <>
-      <div> <LandingPage />
-       
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+            </Routes>
+        </>
+    )
 }
 
 export default App
