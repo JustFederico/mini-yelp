@@ -5,10 +5,6 @@ const commentSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-
-    date: {
-        type: String,
-    },
     restaurant_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Restaurant',

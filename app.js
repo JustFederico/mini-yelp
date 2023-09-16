@@ -2,6 +2,7 @@ import dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
 import dbConnect from './dbConnect.js'
+import bodyParser from 'body-parser'
 
 import restaurantsRoutes from './routes/restaurantsRoutes.js'
 import citiesRoutes from './routes/citiesRoutes.js'
@@ -12,6 +13,7 @@ import restaurantHasTagRoutes from './routes/restaurantHasTagRoutes.js'
 
 const app = express()
 app.use(express.json())
+app.use(bodyParser.json())
 app.use(cors())
 dotenv.config()
 dbConnect()
