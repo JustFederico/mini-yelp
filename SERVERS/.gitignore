@@ -5,3 +5,5 @@ node_modules
 
 # misc
 .env
+
+display_all_documents.js
