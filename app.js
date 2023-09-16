@@ -8,6 +8,7 @@ import citiesRoutes from './routes/citiesRoutes.js'
 import tagsRoutes from './routes/tagsRoutes.js'
 import commentsRoutes from './routes/commentsRoutes.js'
 import ratingsRoutes from './routes/ratingsRoutes.js'
+import restaurantHasTagRoutes from './routes/restaurantHasTagRoutes.js'
 
 const app = express()
 app.use(express.json())
@@ -24,6 +25,7 @@ app.use('/', citiesRoutes)
 app.use('/', tagsRoutes)
 app.use('/', commentsRoutes)
 app.use('/', ratingsRoutes)
+app.use('/', restaurantHasTagRoutes)
 
 const PORT = 3000
 app.listen(PORT, () => {
